@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Happy Birthday</title>
+
+    <style>
+        body{
+            background: linear-gradient(to right, pink, purple);
+            text-align:center;
+            font-family:Arial;
+            color:white;
+            margin-top:100px;
+        }
+
+        h1{
+            font-size:60px;
+            animation: glow 2s infinite alternate;
+        }
+
+        p{
+            font-size:25px;
+        }
+
+        button{
+            padding:15px 30px;
+            border:none;
+            border-radius:10px;
+            font-size:20px;
+            cursor:pointer;
+        }
+
+        @keyframes glow{
+            from{
+                text-shadow:0 0 10px white;
+            }
+            to{
+                text-shadow:0 0 30px yellow;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>🎂 Happy Birthday 🎂</h1>
+
+    <p>You are special ✨</p>
+
+    <button onclick="showMessage()">
+        Click Me
+    </button>
+
+    <script>
+        function showMessage(){
+            alert("Have an amazing birthday 🎉");
+        }
+    </script>
+
+</body>
+</html>
